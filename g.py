@@ -1,6 +1,30 @@
 #For testing and figuring out gr
 import gr
 
+# see https://twistedthreads.org/pattern/NxyFKCzGxeFnqnvgZ
+# / / / / \ \ \ \ \
+# \ \ \ \ / / / \ \
+#
+# ///\\
+# \\\\\
+
+
+# For every tablet, draw one of these:
+# _    _
+# /    \
+#
+# Depending on direction of rotation. 
+# Left part: color of prev. thread being rotated out
+# Right part: color of new thread being rotated in.
+# _________
+# ///\\\///
+#
+# Nonrotating tablet gives a float. Drawing postponed till
+# rotation happens, or the weaving ends.
+#
+# Re-ordering tablets: draw under-movers first, then over-movers on top.
+# Much like normal, but from old column to new column!
+
 
 #gr.clearws()
 #gr.setviewport(0, 1, 0, 1)
